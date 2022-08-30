@@ -5,6 +5,6 @@
 ```
 http://localhost:8080/
 ```
-
-- Username : user
-- Password: It will get printed when application starts
+> This is set into application.properties
+- Username : vijay
+- Password: abc
