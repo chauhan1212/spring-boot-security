@@ -17,7 +17,7 @@ public class HomeResource {
 	 * Can be accessible by admin role
 	 * http://localhost:8080/admin
 	 * 
-	 * This is set into SecurityConfiguration.java
+	 * This is set into data.sql resource
 	 * Username : vijay (user role) and ajay  (admin role)
 	 * Password: pass and pass
 	 */

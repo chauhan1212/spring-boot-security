@@ -1,7 +1,7 @@
 ﻿# spring-boot-security1
 
-### 04 How to configure Spring Security Authentication
-### 05 How to configure Spring Security Authorization
+### 06 How Spring Security Authentication works
+### 07 How to setup JDBC authentication with Spring Security from scratch
 
 ```
 http://localhost:8080/
@@ -25,7 +25,7 @@ To Logout:
 http://localhost:8080/logout
 ```
 
-This is set into SecurityConfiguration.java
+This is set into data.sql resource
 - Username : vijay (user role) and ajay  (admin role)
 - Password: pass and pass
 
