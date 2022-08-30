@@ -1,7 +1,7 @@
 ﻿# spring-boot-security1
 
-### 04 How to configure Spring Security Authentication
-### 05 How to configure Spring Security Authorization
+### 06 How Spring Security Authentication works
+### 07 How to setup JDBC authentication with Spring Security from scratch
 
 ```
 http://localhost:8080/
