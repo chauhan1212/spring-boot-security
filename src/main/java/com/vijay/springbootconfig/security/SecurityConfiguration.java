@@ -19,12 +19,18 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	DataSource dataSource;
 	
 	/*
-	 * Option 1 : With default schema
+	 * Option 3 : With Database connections with different schemas
 	 */
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 		auth.jdbcAuthentication()
-			.dataSource(dataSource);
+			.dataSource(dataSource)
+			.usersByUsernameQuery("select userid, pwd, enabled "
+					+ "from my_users "
+					+ "where userid = ?")
+			.authoritiesByUsernameQuery("select userid, authority "
+					+ "from my_authorities "
+					+ "where userid = ?");
 	}
 	
 	@Bean

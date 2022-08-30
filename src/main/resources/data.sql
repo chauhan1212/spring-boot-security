@@ -1,9 +1,9 @@
-INSERT INTO users (username, password, enabled) VALUES
-  ('vijay', 'pass', true);
-INSERT INTO users (username, password, enabled) VALUES
-  ('ajay', 'pass', true);
-
-INSERT INTO authorities (username, authority) VALUES
-  ('vijay','ROLE_USER');
-INSERT INTO authorities (username, authority) VALUES
-  ('ajay','ROLE_ADMIN');
+INSERT INTO my_users (userid, pwd, enabled) 
+	values('dinesh', 'pass', true);
+INSERT INTO my_users (userid, pwd, enabled) 
+	values('jayesh', 'pass', true);
+	
+INSERT INTO my_authorities (userid, authority) 
+	values('dinesh', 'ROLE_USER');	
+INSERT INTO my_authorities (userid, authority) 
+	values('jayesh', 'ROLE_ADMIN');
