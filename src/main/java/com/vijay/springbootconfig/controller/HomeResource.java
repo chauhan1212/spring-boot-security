@@ -7,8 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HomeResource {
 	
 	/*
-	 * 04 How to configure Spring Security Authentication
-	 * 05 How to configure Spring Security Authorization
+	 * 06 How Spring Security Authentication works 
 	 * 
 	 * http://localhost:8080/
 	 * 
@@ -19,8 +18,8 @@ public class HomeResource {
 	 * http://localhost:8080/admin
 	 * 
 	 * This is set into SecurityConfiguration.java
-	 * Username : blah (user role) and foo  (admin role)
-	 * Password: blah and foo
+	 * Username : vijay (user role) and ajay  (admin role)
+	 * Password: pass and pass
 	 */
 	@RequestMapping("/")
 	public String home() {

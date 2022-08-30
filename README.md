@@ -26,6 +26,6 @@ http://localhost:8080/logout
 ```
 
 This is set into SecurityConfiguration.java
-Username : blah (user role) and foo  (admin role)
-Password: blah and foo
+- Username : vijay (user role) and ajay  (admin role)
+- Password: pass and pass
 

@@ -1,38 +1,37 @@
 package com.vijay.springbootconfig.security;
 
+import javax.sql.DataSource;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.core.userdetails.User;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 @EnableWebSecurity
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
+	@Autowired
+	DataSource dataSource;
+	
 	/*
-	 * Option 1(main branch): Just start app without this class and just by adding spring security dependency to pom.xml
-	 * 			In this, User will be "user" and password will generate in console
-	 * 
-	 * Option 2 (v01 branch) : Override default username and password using adding user/pass to application.properties
-	 * 			application.properties
-	 * 				spring.security.user.name=foo
-	 * 				spring.security.user.password=foo
-	 * 
-	 * Current Approach
-	 * Option 3: Using extending WebSecurityConfigurerAdapter
+	 * Option 1 : With default schema
 	 */
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-		auth.inMemoryAuthentication()
-			.withUser("blah")
-			.password("blah")
-			.roles("USER")
-			.and()
-			.withUser("foo")
-			.password("foo")
-			.roles("ADMIN");
+		auth.jdbcAuthentication()
+		.dataSource(dataSource)
+		.withDefaultSchema()
+		.withUser( User.withUsername("vijay")
+				.password("pass")
+				.roles("USER"))
+		.withUser( User.withUsername("ajay")
+				.password("pass")
+				.roles("ADMIN"));
 	}
 	
 	@Bean
