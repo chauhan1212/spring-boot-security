@@ -19,6 +19,12 @@ Can be accessible by admin role
 http://localhost:8080/admin
 ```
 
+To Logout:
+
+```
+http://localhost:8080/logout
+```
+
 This is set into SecurityConfiguration.java
 Username : blah (user role) and foo  (admin role)
 Password: blah and foo
