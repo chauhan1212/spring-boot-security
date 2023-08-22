@@ -6,6 +6,10 @@
 http://localhost:8080/
 ```
 
+```
+http://localhost:8080/logout
+```
+
 - Username : user
 - Password: It will get printed when application starts
 
