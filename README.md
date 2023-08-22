@@ -9,6 +9,8 @@ http://localhost:8080/
 - Username : user
 - Password: It will get printed when application starts
 
+---
+
 #### How it works
 
 - 01. Adding spring security in pom.xml
