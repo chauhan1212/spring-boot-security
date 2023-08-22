@@ -5,6 +5,11 @@
 ```
 http://localhost:8080/
 ```
+
+```
+http://localhost:8080/logout
+```
+
 > This is set into application.properties
 - Username : vijay
 - Password: abc
