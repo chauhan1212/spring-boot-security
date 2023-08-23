@@ -6,6 +6,8 @@
 http://localhost:8080/
 ```
 
+To Logout:
+
 ```
 http://localhost:8080/logout
 ```
