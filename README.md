@@ -1,7 +1,7 @@
 ﻿# spring-boot-security1
 
 ### 04 How to configure Spring Security Authentication
-### 05 How to configure Spring Security Authorization - Java Brains
+### 05 How to configure Spring Security Authorization
 
 ```
 http://localhost:8080/
