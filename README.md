@@ -25,7 +25,11 @@ To Logout:
 http://localhost:8080/logout
 ```
 
-This is set into SecurityConfiguration.java
-Username : blah (user role) and foo  (admin role)
-Password: blah and foo
+> Note: Below credentials are set into SecurityConfiguration.java
+
+
+| Username    | Password    | Role          |
+| ------      | ------      | ------        |
+| blah        |  blah       | USER ROLE     |
+| foo         |  foo        | ADMIN ROLE    |
 
