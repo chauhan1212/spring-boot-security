@@ -1,4 +1,4 @@
-﻿# spring-boot-security1
+﻿# spring-boot-security
 ### 01 What is Spring Security really all about - Theory
 
 ### 02 Five Spring Security Concepts - Authentication vs authorization - Theory
