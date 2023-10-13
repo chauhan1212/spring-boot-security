@@ -25,7 +25,7 @@ To Logout:
 http://localhost:8080/logout
 ```
 
-This is set into data.sql resource
+This is set into SecurityConfiguration Class:
 - Username : vijay (user role) and ajay  (admin role)
 - Password: pass and pass
 
