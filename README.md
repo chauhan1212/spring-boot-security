@@ -1,4 +1,4 @@
-﻿# spring-boot-security1
+﻿# spring-boot-security
 
 ### 06 How Spring Security Authentication works
 ### 07 How to setup JDBC authentication with Spring Security from scratch
